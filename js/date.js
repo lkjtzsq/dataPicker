@@ -160,8 +160,9 @@
 
                             });
                             //添加天数
+                            var reg=/[^0-9]/ig;
                             var NumDate = $('.lidian_hover').text().replace(/[^0-9]/ig,"");
-                            $('.NumDate').text(NumDate);
+                            $('.NumDate').text(NumDate==""?1:NumDate);
 
                             var st = $('#startDate').val();
                             var en = $('#endDate').val();
